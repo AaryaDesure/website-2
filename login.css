@@ -1,0 +1,141 @@
+.gradient-bg {
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.center-content {
+    max-width: 100%;
+}
+
+
+.card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 0.2rem;
+    padding: 0.65rem 0.8rem;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-label {
+    color: #ccc;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.input:focus+.input-label,
+.input:not(:placeholder-shown)+.input-label {
+    top: -0.5rem;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+
+.button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bolder;
+
+    transform: scale(1.05);
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.7em 0.7em -0.6em grey;
+
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.icon {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.5);
+
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.small-text {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 1rem;
+}
+
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.guest-link {
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WEDDING</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="service" style="background-color: #dda15e;">
+        <div class="name">
+            <h1>WEDDING</h1>
+        </div>
+
+    </div>
+    <form>
+        <div class="details">
+            <div class="wed_date">
+                <label for="date">Select a Date: </label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="people">
+                <label for="pax">Select no.of People</label>
+                <input type="number" id="pax" placeholder="MIN '10'" value="10" required>
+
+            </div>
+            <div class="budget">
+                <label for="priceRange">Select Price Range: </label>
+                <input type="range" id="priceRange" name="priceRange" min="0" max="100000" step="100" value="5000"
+                    oninput="document.getElementById('priceOutput').textContent = '£' + this.value">
+                <span id="priceOutput" style="margin-top: 10px;">£5000</span>
+
+
+                <script>
+                    // Optionally, set initial value display
+                    document.getElementById('priceOutput').textContent = document.getElementById('priceRange').value;
+                </script>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
